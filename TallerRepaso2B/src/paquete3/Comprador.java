@@ -20,7 +20,7 @@ public class Comprador {
 
     @Override
     public String toString() {
-        return String.format("Comprador\nnombres=%s\n,"
+        return String.format("Comprador\nnombres=%s\n"
                 + "cedula= %s\n", nombres, cedula);
     }
 }
