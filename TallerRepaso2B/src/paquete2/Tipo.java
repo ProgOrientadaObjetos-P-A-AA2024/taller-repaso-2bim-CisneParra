@@ -46,8 +46,11 @@ public abstract class Tipo {
 
     @Override
     public String toString() {
-        return String.format("Vehiculo\n propietario=%s\n, marca= %s\n,"
-                + " precioBase= %.2f\n, precioFinal=%.2f \n",
-                propietario, marca, precioBase, obtenerPrecioFinal());
+        return String.format("Vehiculo\n propietario=%s\n,"
+                + " marca= %s\n,"
+                + " precioBase= %.2f\n, "
+                + "precioFinal=%.2f \n",
+                propietario, marca, precioBase
+                , obtenerPrecioFinal());
     }
 }

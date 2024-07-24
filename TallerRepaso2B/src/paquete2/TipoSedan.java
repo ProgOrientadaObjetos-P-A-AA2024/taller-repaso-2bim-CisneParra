@@ -10,7 +10,7 @@ import paquete3.*;
  *
  * @author natsu
  */
-class TipoSedan extends Tipo {
+public class TipoSedan extends Tipo {
 
     private double porcentajeDescuento;
 
@@ -23,12 +23,12 @@ class TipoSedan extends Tipo {
     @Override
     protected double calcularPrecioFinal() {
         double descuento = (precioBase * porcentajeDescuento) / 100;
-        double seguroMecanico = precioBase * 0.01; // 1% del precio base
+        double seguroMecanico = precioBase * 0.01; 
         return precioBase - descuento + seguroMecanico;
     }
 
     @Override
     public String toString() {
-        return "TipoSedan{" + super.toString() + '}';
+        return "TipoSedan\n" + super.toString();
     }
 }

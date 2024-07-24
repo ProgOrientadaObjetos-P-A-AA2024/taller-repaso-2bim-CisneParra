@@ -10,11 +10,11 @@ import paquete3.*;
  *
  * @author natsu
  */
-class TipoSuv extends Tipo {
+public class TipoSuvan extends Tipo {
 
     private double porcentajeSeguro;
 
-    public TipoSuv(Comprador propietario, String marca, double precioBase,
+    public TipoSuvan(Comprador propietario, String marca, double precioBase,
              double porcentaje) {
         super(propietario, marca, precioBase);
         porcentajeSeguro = porcentaje;
@@ -27,6 +27,6 @@ class TipoSuv extends Tipo {
 
     @Override
     public String toString() {
-        return "TipoSuv{" + super.toString() + '}';
+        return "TipoSuv\n" + super.toString();
     }
 }

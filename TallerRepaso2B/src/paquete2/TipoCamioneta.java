@@ -10,7 +10,7 @@ import paquete3.*;
  *
  * @author natsu
  */
-class TipoCamioneta extends Tipo {
+public class TipoCamioneta extends Tipo {
 
     private double porcentajeAdicionalImportacion;
 
@@ -30,6 +30,6 @@ class TipoCamioneta extends Tipo {
 
     @Override
     public String toString() {
-        return "TipoCamioneta{" + super.toString() + '}';
+        return "TipoCamioneta\n" + super.toString();
     }
 }
